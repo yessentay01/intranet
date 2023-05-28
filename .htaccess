@@ -1,0 +1,73 @@
+RewriteEngine on
+#RewriteCond %{HTTPS} off
+#RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+RewriteRule ^index   index.php?page=index&%{QUERY_STRING}
+
+RewriteRule ^users   index.php?page=users&%{QUERY_STRING}
+
+RewriteRule ^groups   index.php?page=groups&%{QUERY_STRING}
+
+RewriteRule ^teams   index.php?page=teams&%{QUERY_STRING}
+
+RewriteRule ^readgroup   index.php?page=readgroup&%{QUERY_STRING}
+
+RewriteRule ^readteam   index.php?page=readteam&%{QUERY_STRING}
+
+RewriteRule ^courses   index.php?page=courses&%{QUERY_STRING}
+
+RewriteRule ^grades   index.php?page=grades&%{QUERY_STRING}
+RewriteRule ^gradegroup   index.php?page=gradegroup&%{QUERY_STRING}
+RewriteRule ^grade   index.php?page=grade&%{QUERY_STRING}
+
+RewriteRule ^editcourse   index.php?page=editcourse&%{QUERY_STRING}
+
+RewriteRule ^editchapter   index.php?page=editchapter&%{QUERY_STRING}
+
+RewriteRule ^editlesson   index.php?page=editlesson&%{QUERY_STRING}
+
+RewriteRule ^addlesson   index.php?page=addlesson&%{QUERY_STRING}
+
+RewriteRule ^addquestion   index.php?page=addquestion&%{QUERY_STRING}
+
+RewriteRule ^readlesson   index.php?page=readlesson&%{QUERY_STRING}
+
+RewriteRule ^readcourse   index.php?page=readcourse&%{QUERY_STRING}
+
+RewriteRule ^readchapter   index.php?page=readchapter&%{QUERY_STRING}
+
+RewriteRule ^profile   index.php?page=profile&%{QUERY_STRING}
+
+RewriteRule ^search   index.php?page=search&%{QUERY_STRING}
+
+RewriteRule ^schedule   index.php?page=schedule&%{QUERY_STRING}
+
+RewriteRule ^editschedule   index.php?page=editschedule&%{QUERY_STRING}
+
+RewriteRule ^tests   index.php?page=tests&%{QUERY_STRING}
+
+RewriteRule ^edittest   index.php?page=edittest&%{QUERY_STRING}
+
+RewriteRule ^editquestion   index.php?page=editquestion&%{QUERY_STRING}
+
+RewriteRule ^readquestion   index.php?page=readquestion&%{QUERY_STRING}
+
+RewriteRule ^writecontest   index.php?page=writecontest&%{QUERY_STRING}
+
+RewriteRule ^mycontests   index.php?page=mycontests&%{QUERY_STRING}
+
+RewriteRule ^readcontest   index.php?page=readcontest&%{QUERY_STRING}
+
+RewriteRule ^readquestcontest   index.php?page=readquestcontest&%{QUERY_STRING}
+
+RewriteRule ^get_attached_file   index.php?page=get_attached_file&%{QUERY_STRING}
+
+RewriteRule ^auth   index.php?act=auth&%{QUERY_STRING}
+
+RewriteRule ^logout   index.php?act=logout&%{QUERY_STRING}
+
+RewriteRule ^dropzone   index.php?act=dropzone&%{QUERY_STRING}
+
+RewriteRule ^processrequest   index.php?act=processrequest&%{QUERY_STRING}
+
+RewriteRule ^ajaxrequest   index.php?ajax=ajaxrequest&%{QUERY_STRING}
