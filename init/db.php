@@ -7,8 +7,8 @@
         //$connection = new PDO("mysql:host=localhost;dbname=p-321368_intranet;charset=utf8", "root", "");
 
 
-      //  $connection = new PDO("mysql:host=localhost;dbname=laravel;charset=utf8", "laraveluser", "password");
-        $connection = mysqli_connect(DB_SERVER, DB_USER, DB_PASS, DB_NAME);
+        $connection = new PDO("mysql:host=localhost;dbname=laravel;charset=utf8", "laraveluser", "password");
+        //$connection = mysqli_connect(DB_SERVER, DB_USER, DB_PASS, DB_NAME);
 
         $connected = true;
 	    
